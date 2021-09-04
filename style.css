@@ -9,7 +9,7 @@
 :root{
     --light-green: #D8EBE0;
     --brown: #D28966;
-    --yellow: #FAD7AA ;
+    --light-brown: #FAD7AA ;
     --green:  #2C6E72;
     --dark: #264653;
 }
@@ -41,10 +41,8 @@ body{
 a{text-decoration: none;}
 
 h1{
-    font-weight: 300;
-    font-size: 40px;
-    letter-spacing: 2px;
     color: var(--dark);
+    font-size: 40px;
 }
 
 p{
@@ -56,20 +54,20 @@ p{
 }
 
 .btn{
-  color: white; 
-  padding: 10px 20px;
-  border-radius: 20px; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .green__btn{background-color: var(--green);}
 .green__btn:hover{background-color: var(--light-green);}
 .brown__btn{background-color: var(--brown);}
-.brown__btn:hover{background-color: var(--light-green);}
+.brown__btn:hover{background-color: var(--light-brown);}
 
 ul li{list-style: none;}
 
-/* LANDING AREA =============*/
-#landing__area{
+/* hero */
+#hero{
     width: 100%;
     height: 60vh;
     position: relative;
@@ -86,17 +84,25 @@ nav{
     justify-content: flex-start;
 }
 
-nav .logo{font-family: 'Give You Glory', cursive;}
+nav .logo{
+    font-family: 'Give You Glory', cursive;
+}
 
-nav ul{margin-left: 10%;}
+nav ul{
+    margin-left: 10%;
+}
 
 nav ul li{
-    list-style: none;
     margin: 0 20px;
 }
 
-nav ul li a{color: var(--dark);}
-nav ul li a:hover{color: var(--light-green);}
+nav ul li a{
+    color: var(--dark);
+}
+
+nav ul li a:hover{
+    color: var(--light-green);
+}
 
 .introduction{
     height: 100%;
@@ -113,28 +119,28 @@ nav ul li a:hover{color: var(--light-green);}
     100%{transform: translateX(0);}
 }
 
-.introduction h1{font-family: 'Lancelot', cursive;}
+.introduction h1{
+    font-family: 'Lancelot', cursive;
+}
 
 .introduction p{
     max-width: 50%;
     line-height: 30px;
 }
 
-#landing__area .main__img{
+#hero .main__img{
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
-    /* background-color: blanchedalmond; */
 }
 
 .main__img img{
     height: 100%;
-    /* width: auto; */
     object-fit: cover;
 }
 
-/* SKILLS ===========*/
+/* skills */
 #skills{
     margin: 3rem;
     padding: 1rem;
@@ -146,7 +152,6 @@ nav ul li a:hover{color: var(--light-green);}
     justify-content: space-between;
 }
 
-/* skill card */
 .skill{
     border: solid 5px var(--green);
     padding: 10px 30px;
@@ -167,7 +172,7 @@ nav ul li a:hover{color: var(--light-green);}
 .skill ul li{
     color: var(--green);
     font-size: 16px;
-    margin:5px 0;
+    margin: 5px 0;
 }
 
 .skill .brown__btn{
@@ -210,7 +215,7 @@ nav ul li a:hover{color: var(--light-green);}
     z-index: -99;
 }
 
-/* SERVICES ==========*/
+/* services */
 #services{
     width: 80vw;
     max-width: 1200px;
@@ -235,10 +240,10 @@ nav ul li a:hover{color: var(--light-green);}
     background-image: url(imgs/Illustration.png);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
-/* CONTACT =========*/
+/* contact */
 #contact{
     width: 100%;
     padding: 1rem;
@@ -275,23 +280,14 @@ form input::placeholder{
 
 form button{
     cursor: pointer;
-    background-color: var(--yellow);
-    color: var(--brown);
+    background-color: var(--light-green);
+    color: var(--green);
     text-transform: uppercase;
 }
 
-/* FOOTER ===============*/
+/* footer */
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer div{
-    padding: 10px;
-    margin: 20px 0;
-}
-
-footer .name{
-    border-right: 3px solid var(--light-green);
 }
